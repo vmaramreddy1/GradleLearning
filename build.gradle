@@ -1,3 +1,11 @@
+//Gradle executes each task only once.
+/*you can exclude a task from being executed using
+the -x command line option and providing the name of the task
+to exclude
+
+example: gradle dist -x test
+*/
+
 task compile {
    doLast {
       println 'compiling source'
