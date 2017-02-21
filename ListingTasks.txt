@@ -41,3 +41,19 @@ tasks - Displays the tasks runnable from root project 'projectReports' (some of 
 To see all tasks and more detail, run gradle tasks --all
 
 To see more detail about a task, run gradle help --task <task>
+
+---------------------------------------------------------------------------
+
+
+By default, this report shows only those tasks which have been assigned
+to a task group, so-called visible tasks. You can do this by setting the group
+property for the task. You can also set the description property,
+to provide a description to be included in the report.
+
+Example 4.11. Changing the content of the task report
+
+build.gradle
+dists {
+    description = 'Builds the distribution'
+    group = 'build'
+}
