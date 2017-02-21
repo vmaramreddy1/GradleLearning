@@ -1,0 +1,11 @@
+Continuing the build when a failure occurs
+--------------------------------------------
+1. By default, Gradle will abort the execution and fail the build
+   as soon as any task fails.
+2. In order to discover as many failures as possible in a single build execution ,
+    we can use the --continue option.
+3. When executed with --continue, Gradle will execute every task
+   to be executed where all of the dependencies for that task
+   completed without failure, instead of stopping as soon as the
+   first failure is encountered. Each of the encountered failures 
+   will be reported at the end of the build.
