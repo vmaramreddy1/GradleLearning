@@ -1,0 +1,17 @@
+Listing Projects
+---------------------
+
+Running gradle projects gives you a list of the sub-projects of the
+selected project, displayed in a hierarchy. Here is an example:
+
+>gradle -q projects 
+------------------------------------------------------------
+Root project
+------------------------------------------------------------
+
+Root project 'projectReports'
++--- Project ':api' - The shared API for the application
+\--- Project ':webapp' - The Web application implementation
+
+To see a list of the tasks of a project, run gradle
+<project-path>:tasks For example, try running gradle :api:tasks
