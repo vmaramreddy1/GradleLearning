@@ -1,0 +1,24 @@
+Task Usage Details
+---------------------------
+Running `gradle help --task someTask` gives you detailed information about a
+specific task or multiple tasks matching the given task name in your
+multi-project build. Below is an example of this detailed information:
+
+> gradle -q help --task libs
+Detailed task information for libs
+
+Paths
+     :api:libs
+     :webapp:libs
+
+Type
+     Task (org.gradle.api.Task)
+
+Description
+     Builds the JAR
+
+Group
+     build
+
+This information includes the full task path, the task type, possible
+commandline options and the description of the given task.
