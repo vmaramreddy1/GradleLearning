@@ -1,0 +1,5 @@
+Listing project buildscript dependencies
+---------------------------------------------------
+Running 'gradle buildEnvironment' visualises the buildscript dependencies of the
+selected project, similarly to how gradle dependencies visualises the
+dependencies of the software being built.
